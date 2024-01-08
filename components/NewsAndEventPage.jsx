@@ -30,8 +30,8 @@ const NewsAndEventPage = () => {
             <p className="max-w-[282px] w-full text-[20px] max-sm:px-1 text-[#000] font-normal  leading-[32px] mx-auto mt-[34px] font-poppins ">
               {items.name}
             </p>
-            <div className=" max-w-[284px] w-full mx-auto max-sm:px-1  mt-[10px] flex justify-between items-center  ">
-              <p className="max-w-[127px] w-full text-[20px] font-medium leading-[32px] font-poppins  ">
+            <div className=" max-w-[284px] w-full mx-auto max-sm:px-1  mt-[10px] flex justify-between items-center  text-[20px] font-medium font-poppins">
+              <p className="max-w-[127px] w-full leading-[32px]">
                 {items.master}
               </p>
               <Link
@@ -39,14 +39,14 @@ const NewsAndEventPage = () => {
                 className="max-w-[60px] w-full flex justify-between items-center "
               >
                 <span>{items.messag}</span>
-                <span>{items.number}</span>
+                <span>10</span>
               </Link>
               <Link
                 href=""
                 className="max-w-[60px] w-full flex justify-between items-center "
               >
                 <span>{items.eye}</span>
-                <span>{items.numbers}</span>
+                <span>29</span>
               </Link>
             </div>
 

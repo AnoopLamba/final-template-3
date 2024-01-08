@@ -1,6 +1,12 @@
 import React from "react";
-import { Arrownexticon, Galleryarrowicon, Tworow } from "./common/Icon";
+import {
+  Arrownexticon,
+  Galleryarrowicon,
+  Searchicon,
+  Tworow,
+} from "./common/Icon";
 import { Map2 } from "./common/Helper";
+import Image from "next/image";
 
 const GalleryPage = () => {
   return (
@@ -23,12 +29,24 @@ const GalleryPage = () => {
             key={index}
             className=" max-sm:flex justify-center w-full group relative"
           >
-            <div className=" ">{items.img}</div>
+            <div className="">
+              <Image
+                width={350}
+                height={250}
+                src={items.img}
+                alt="student img"
+              />
+            </div>
             <div className=" z-50 absolute hidden group-hover:block translate-x-[-50%] translate-y-[-50%] top-[50%] left-[50%] ">
-              {items.searchimg}
+              <Searchicon />
             </div>
             <div className=" absolute top-0 hidden group-hover:block ">
-              {items.shadowimg}
+              <Image
+                src="/img/shadow.png"
+                width={350}
+                height={250}
+                alt="shadow"
+              />
             </div>
           </div>
         ))}

@@ -1,10 +1,14 @@
 import Image from "next/image";
 import {
   EyeIcons,
+  Fb,
+  Insta,
   MessageIcons,
   NumberIcons,
   Searchicon,
   TwIcons,
+  Tweet,
+  Whatsapp,
 } from "./Icon";
 
 //sonu data start
@@ -96,160 +100,144 @@ export const Cards = [
 // akshay data start
 export const Map2 = [
   {
-    img: (
-      <Image
-        src="/img/twochildren1.png"
-        alt="twochildren"
-        width={350}
-        height={250}
-      />
-    ),
-    shadowimg: <Image src="/img/shadow.png" width={350} height={250} />,
-    searchimg: <Searchicon />,
+    img: "/img/twochildren1.png",
   },
   {
-    img: (
-      <Image
-        src="/img/twochildern2.png"
-        alt="twochildren"
-        width={350}
-        height={250}
-      />
-    ),
-    shadowimg: <Image src="/img/shadow.png" width={350} height={250} />,
-    searchimg: <Searchicon />,
+    img: "/img/twochildern2.png",
   },
   {
-    img: (
-      <Image
-        src="/img/teacher3.png"
-        alt="twochildren"
-        width={350}
-        height={250}
-      />
-    ),
-    shadowimg: <Image src="/img/shadow.png" width={350} height={250} />,
-    searchimg: <Searchicon />,
+    img: "/img/teacher3.png",
   },
   {
-    img: (
-      <Image
-        src="/img/girlboy4.png"
-        alt="twochildren"
-        width={350}
-        height={250}
-      />
-    ),
-    shadowimg: <Image src="/img/shadow.png" width={350} height={250} />,
-    searchimg: <Searchicon />,
+    img: "/img/girlboy4.png",
   },
   {
-    img: (
-      <Image
-        src="/img/twochildren1.png"
-        alt="twochildren"
-        width={350}
-        height={250}
-      />
-    ),
-    shadowimg: <Image src="/img/shadow.png" width={350} height={250} />,
-    searchimg: <Searchicon />,
+    img: "/img/twochildren1.png",
   },
   {
-    img: (
-      <Image src="/img/check5.png" alt="twochildren" width={350} height={250} />
-    ),
-    shadowimg: <Image src="/img/shadow.png" width={350} height={250} />,
-    searchimg: <Searchicon />,
+    img: "/img/check5.png",
   },
   {
-    img: (
-      <Image
-        src="/img/drawing6.png"
-        alt="twochildren"
-        width={350}
-        height={250}
-      />
-    ),
-    shadowimg: <Image src="/img/shadow.png" width={350} height={250} />,
-    searchimg: <Searchicon />,
+    img: "/img/drawing6.png",
   },
   {
-    img: (
-      <Image
-        src="/img/fullchild7.png"
-        alt="twochildren"
-        width={350}
-        height={250}
-      />
-    ),
-    shadowimg: <Image src="/img/shadow.png" width={350} height={250} />,
-    searchimg: <Searchicon />,
+    img: "/img/fullchild7.png",
   },
   {
-    img: (
-      <Image src="/img/car.8.png" alt="twochildren" width={350} height={250} />
-    ),
-    shadowimg: <Image src="/img/shadow.png" width={350} height={250} />,
-    searchimg: <Searchicon />,
+    img: "/img/car.8.png",
   },
   {
-    img: (
-      <Image
-        src="/img/techbook9.png"
-        alt="twochildren"
-        width={350}
-        height={250}
-      />
-    ),
-    shadowimg: <Image src="/img/shadow.png" width={350} height={250} />,
-    searchimg: <Searchicon />,
+    img: "/img/techbook9.png",
   },
 
   {
-    img: (
-      <Image src="/img/car.8.png" alt="error here" width={350} height={250} />
-    ),
-    shadowimg: <Image src="/img/shadow.png" width={350} height={250} />,
-    searchimg: <Searchicon />,
+    img: "/img/car.8.png",
   },
   {
-    img: (
-      <Image
-        src="/img/alyan11.png"
-        alt="twochildren"
-        width={350}
-        height={250}
-      />
-    ),
-    shadowimg: <Image src="/img/shadow.png" width={350} height={250} />,
-    searchimg: <Searchicon />,
+    img: "/img/alyan11.png",
   },
   {
-    img: (
-      <Image src="/img/boy12.png" alt="twochildren" width={350} height={250} />
-    ),
-    shadowimg: <Image src="/img/shadow.png" width={350} height={250} />,
-    searchimg: <Searchicon />,
+    img: "/img/boy12.png",
   },
   {
-    img: (
-      <Image src="/img/last13.png" alt="twochildren" width={350} height={250} />
-    ),
-    shadowimg: <Image src="/img/shadow.png" width={350} height={250} />,
-    searchimg: <Searchicon />,
+    img: "/img/last13.png",
   },
   {
-    img: (
-      <Image
-        src="/img/colorfullchild.png"
-        alt="twochildren"
-        width={350}
-        height={250}
-      />
-    ),
-    shadowimg: <Image src="/img/shadow.png" width={350} height={250} />,
-    searchimg: <Searchicon />,
+    img: "/img/colorfullchild.png",
   },
 ];
 //akshay data end
+
+// dinesh data start
+
+export const Data = [
+  {
+    img: <Image src="/img/Menin.png" width={300} height={281} />,
+    text: "Headmaster",
+    name: "Afuwape J. Abiodun ",
+    lorem:
+      "Consectur orem ipsum dor amet, adipiscing elit, sed do eiusmod tem.",
+    fb: <Fb />,
+    wts: <Whatsapp />,
+    ins: <Insta />,
+    twee: <Tweet />,
+  },
+  {
+    img: <Image src="/img/Ladki.png" width={300} height={281} />,
+    text: "Headmaster",
+    name: "Afuwape J. Abiodun ",
+    lorem:
+      "Consectur orem ipsum dor amet, adipiscing elit, sed do eiusmod tem.",
+    fb: <Fb />,
+    wts: <Whatsapp />,
+    ins: <Insta />,
+    twee: <Tweet />,
+  },
+  {
+    img: <Image src="/img/Admi.png" width={300} height={281} />,
+    text: "Headmaster",
+    name: "Afuwape J. Abiodun ",
+    lorem:
+      "Consectur orem ipsum dor amet, adipiscing elit, sed do eiusmod tem.",
+    fb: <Fb />,
+    wts: <Whatsapp />,
+    ins: <Insta />,
+    twee: <Tweet />,
+  },
+  {
+    img: <Image src="/img/Chasma.png" width={300} height={281} />,
+    text: "Headmaster",
+    name: "Afuwape J. Abiodun ",
+    lorem:
+      "Consectur orem ipsum dor amet, adipiscing elit, sed do eiusmod tem.",
+    fb: <Fb />,
+    wts: <Whatsapp />,
+    ins: <Insta />,
+    twee: <Tweet />,
+  },
+  {
+    img: <Image src="/img/Smile-dinesh.png" width={300} height={281} />,
+    text: "Headmaster",
+    name: "Afuwape J. Abiodun ",
+    lorem:
+      "Consectur orem ipsum dor amet, adipiscing elit, sed do eiusmod tem.",
+    fb: <Fb />,
+    wts: <Whatsapp />,
+    ins: <Insta />,
+    twee: <Tweet />,
+  },
+  {
+    img: <Image src="/img/Ankh.png" width={300} height={281} />,
+    text: "Headmaster",
+    name: "Afuwape J. Abiodun ",
+    lorem:
+      "Consectur orem ipsum dor amet, adipiscing elit, sed do eiusmod tem.",
+    fb: <Fb />,
+    wts: <Whatsapp />,
+    ins: <Insta />,
+    twee: <Tweet />,
+  },
+  {
+    img: <Image src="/img/Cute-dinesh.png" width={300} height={281} />,
+    text: "Headmaster",
+    name: "Afuwape J. Abiodun ",
+    lorem:
+      "Consectur orem ipsum dor amet, adipiscing elit, sed do eiusmod tem.",
+    fb: <Fb />,
+    wts: <Whatsapp />,
+    ins: <Insta />,
+    twee: <Tweet />,
+  },
+  {
+    img: <Image src="/img/Jr.png" width={300} height={281} />,
+    text: "Headmaster",
+    name: "Afuwape J. Abiodun ",
+    lorem:
+      "Consectur orem ipsum dor amet, adipiscing elit, sed do eiusmod tem.",
+    fb: <Fb />,
+    wts: <Whatsapp />,
+    ins: <Insta />,
+    twee: <Tweet />,
+  },
+];
+// dinesh data end

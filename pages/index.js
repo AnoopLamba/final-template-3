@@ -1,9 +1,10 @@
-import ContactUs from "@/components/ContactUs";
+import HomePage from "@/components/HomePage";
+import Layout from "@/components/common/Layout";
 
 export default function Home() {
   return (
-    <>
-      <ContactUs />
-    </>
+    <Layout>
+      <HomePage />
+    </Layout>
   );
 }

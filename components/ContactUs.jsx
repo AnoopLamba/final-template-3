@@ -56,12 +56,10 @@ const ContactUs = () => {
             </div>
           </div>
         </div>
-        <div className="w-full max-sm:rounded-[10px]  sm:rounded-r-[10px] max-sm:max-w-[451px] max-sm:h-[400px]">
+        <div className="w-full max-sm:rounded-[10px] sm:rounded-r-[10px] max-sm:max-w-[451px] max-sm:h-[400px]">
           <iframe
             className="w-full h-full max-sm:rounded-[10px]  sm:rounded-r-[10px]"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d111497.23607041825!2d75.67313746410663!3d29.15616578966612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391232d8011d0c37%3A0x1d3f0df105af1178!2sHisar%2C%20Haryana!5e0!3m2!1sen!2sin!4v1704647687638!5m2!1sen!2sin"
-            width="600"
-            height="450"
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
