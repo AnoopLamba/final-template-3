@@ -149,7 +149,6 @@ export const Map2 = [
 //akshay data end
 
 // dinesh data start
-
 export const Data = [
   {
     img: <Image src="/img/Menin.png" width={300} height={281} />,

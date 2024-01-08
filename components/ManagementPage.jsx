@@ -8,7 +8,7 @@ const ManagementPage = () => {
     <>
       {/* founder */}
       <div className="max-w-[1151px] bg-[#FFF] font-poppins w-full pb-[50px] mx-auto ">
-        <div className="mx-auto flex max-w-[1052px] items-center gap-y-7 px-4 mt-12 w-full  justify-between max-lg:flex-col  ">
+        <div className="mx-auto flex max-w-[1052px] items-center gap-y-7 px-4 mt-12 w-full  justify-between max-lg:flex-col-reverse">
           <div className="max-w-[501px] w-full">
             <p className="text-[30px] font-semibold leading-normal text-[#FF725E]">
               THE FOUNDER
@@ -47,7 +47,7 @@ const ManagementPage = () => {
       </div>
 
       {/* our team */}
-      <div className="bg-[#F2F2F2]">
+      <div className="bg-[#F2F2F2] px-3">
         <div className="max-w-[1152px] w-full  mx-auto pb-[50px]">
           <p className="text-[#22343D] text-[30px] text-center font-semibold leading-normal pt-7">
             Meet Our{" "}
@@ -58,11 +58,11 @@ const ManagementPage = () => {
           <div className="max-w-[143px] w-full mx-auto">
             <Line />
           </div>
-          <div className="max-w-[1052px] mx-auto mt-[19px] flex justify-center gap-[76px] flex-wrap gap-y-[50px]  w-full">
+          <div className="max-w-[1052px] mx-auto mt-[19px] flex justify-center gap-[15px] md:gap-[76px] flex-wrap gap-y-[40px] md:gap-y-[50px]  w-full">
             {Data.map((items, index) => (
               <div
                 key={index}
-                className="max-w-[300px] rounded-[10px]   bg-white w-full"
+                className="max-w-[300px] rounded-[10px] bg-white w-full"
               >
                 <div>
                   <p> {items.img}</p>
