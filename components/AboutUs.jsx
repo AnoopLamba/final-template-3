@@ -1,9 +1,13 @@
 import Image from "next/image";
 import { Lineicon } from "./common/Icon";
+import HeaderBanner from "./common/HeaderBanner";
 
 const AboutUs = () => {
   return (
     <>
+      {/* banner */}
+      <HeaderBanner heading="About Us" />
+
       <div className="max-w-[1052px] w-full mx-auto px-4 lg:px-3 py-[50px]">
         <div>
           <p
@@ -84,7 +88,12 @@ const AboutUs = () => {
           </div>
 
           <div className="mx-auto max-w-[300px] md:max-w-[400px] lg:max-w-[501px] w-full">
-            <Image src="/img/Teaching-img.png" width={501} height={499} />
+            <Image
+              src="/img/Teaching-img.png"
+              width={501}
+              height={499}
+              alt="teacher"
+            />
           </div>
         </div>
       </div>

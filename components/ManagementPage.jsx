@@ -2,10 +2,14 @@ import Link from "next/link";
 import { Fb, Insta, Line, Tweet, Whatsapp } from "./common/Icon";
 import Image from "next/image";
 import { Data } from "./common/Helper";
+import HeaderBanner from "./common/HeaderBanner";
 
 const ManagementPage = () => {
   return (
     <>
+      {/* banner */}
+      <HeaderBanner heading="Mangement" />
+
       {/* founder */}
       <div className="max-w-[1151px] bg-[#FFF] font-poppins w-full pb-[50px] mx-auto ">
         <div className="mx-auto flex max-w-[1052px] items-center gap-y-7 px-4 mt-12 w-full  justify-between max-lg:flex-col-reverse">

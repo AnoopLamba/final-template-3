@@ -32,7 +32,7 @@ const Footer = () => {
             <input
               type="email"
               placeholder="Enter e-mail to recieve news letter"
-              className=" max-sm:pl-2 sm:w-[342px] bg-transparent text-white outline-none placeholder:text-[#fff] placeholder:font-poppins placeholder:text-[14px] sm:placeholder:text-[16px] md:placeholder:text-[20px] font-light md:font-normal leading-10"
+              className=" max-sm:pl-2 w-full bg-transparent text-white outline-none placeholder:text-[#fff] placeholder:font-poppins placeholder:text-[14px] sm:placeholder:text-[16px] md:placeholder:text-[20px] font-light md:font-normal leading-10"
             />
 
             {/* btn */}
