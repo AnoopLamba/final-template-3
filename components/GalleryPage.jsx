@@ -17,7 +17,7 @@ const GalleryPage = () => {
           <Tworow />
         </div>
       </div>
-      <div className=" w-full grid grid-cols-1 mt-12 mx-auto   sm:grid-cols-2 lg:grid-cols-3 gap-x-[50px] gap-y-[50px]">
+      <div className=" w-full grid grid-cols-1 mt-12 mx-auto sm:grid-cols-2 lg:grid-cols-3 gap-x-[50px] gap-y-[50px]">
         {Map2.map((items, index) => (
           <div
             key={index}

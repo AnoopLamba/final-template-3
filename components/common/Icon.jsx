@@ -335,4 +335,20 @@ export const Arrow3icon = () => {
     </>
   );
 };
+export const Lineicon = () => {
+  return (
+    <>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="143"
+        height="9"
+        viewBox="0 0 143 9"
+        fill="none"
+      >
+        <rect width="97" height="2" rx="1" fill="#22343D" />
+        <rect x="43" y="7" width="100" height="2" rx="1" fill="#FF725E" />
+      </svg>
+    </>
+  );
+};
 //akshay icons end
