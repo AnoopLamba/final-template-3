@@ -462,25 +462,6 @@ export const Line = () => {
     </>
   );
 };
-// dinesh icons end
-
-// ajay icons start
-// export function Lineicon() {
-//   return (
-//     <>
-//       <svg
-//         xmlns="http://www.w3.org/2000/svg"
-//         width="143"
-//         height="9"
-//         viewBox="0 0 143 9"
-//         fill="none"
-//       >
-//         <rect width="97" height="2" rx="1" fill="#22343D" />
-//         <rect x="43" y="7" width="100" height="2" rx="1" fill="#FF725E" />
-//       </svg>
-//     </>
-//   );
-// }
 
 export function Darkbtnicon() {
   return (
@@ -702,3 +683,126 @@ export function Callicon() {
   );
 }
 // ajay icons end
+
+// yakshit icon start
+export const SliderRedIcon = () => {
+  return (
+    <>
+      <svg
+        width="20"
+        height="20"
+        viewBox="0 0 20 20"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M10 20C15.514 20 20 15.514 20 10C20 4.486 15.514 0 10 0C4.486 0 0 4.486 0 10C0 15.514 4.486 20 10 20ZM10 2C14.411 2 18 5.589 18 10C18 14.411 14.411 18 10 18C5.589 18 2 14.411 2 10C2 5.589 5.589 2 10 2Z"
+          fill="#FF725E"
+        />
+      </svg>
+    </>
+  );
+};
+export const LineIcons = () => {
+  return (
+    <>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="143"
+        height="9"
+        viewBox="0 0 143 9"
+        fill="none"
+      >
+        <rect width="97" height="2" rx="1" fill="#22343D" />
+        <rect x="43" y="7" width="100" height="2" rx="1" fill="#FF725E" />
+      </svg>
+    </>
+  );
+};
+export const BtnArrowIcon = () => {
+  return (
+    <>
+      <svg
+        className="group-hover:stroke-[#FF725E] duration-300"
+        xmlns="http://www.w3.org/2000/svg"
+        width="18"
+        height="7"
+        viewBox="0 0 18 7"
+        fill="none"
+      >
+        <path
+          className="group-hover:stroke-[#FF725E] duration-300"
+          d="M1 3.7658L17 3.76268M17 3.76268L13.5 0.999756M17 3.76268L13.5 6.00024"
+          stroke="white"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </>
+  );
+};
+export const LeftArrowIcon = () => {
+  return (
+    <>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="18"
+        height="7"
+        viewBox="0 0 18 7"
+        fill="none"
+      >
+        <path
+          className="group-hover:stroke-[#80c4D3] duration-300"
+          d="M17 3.2342L1 3.23732M1 3.23732L4.5 6.00024M1 3.23732L4.5 0.99976"
+          stroke="white"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </>
+  );
+};
+export const AdminIcon = () => {
+  return (
+    <>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="25"
+        height="25"
+        viewBox="0 0 25 25"
+        fill="none"
+      >
+        <path
+          d="M12.5 12.5C15.9521 12.5 18.75 9.70215 18.75 6.25C18.75 2.79785 15.9521 0 12.5 0C9.04785 0 6.25 2.79785 6.25 6.25C6.25 9.70215 9.04785 12.5 12.5 12.5ZM17.1777 14.0918L14.8438 23.4375L13.2812 16.7969L14.8438 14.0625H10.1562L11.7188 16.7969L10.1562 23.4375L7.82227 14.0918C4.34082 14.2578 1.5625 17.1045 1.5625 20.625V22.6562C1.5625 23.9502 2.6123 25 3.90625 25H21.0938C22.3877 25 23.4375 23.9502 23.4375 22.6562V20.625C23.4375 17.1045 20.6592 14.2578 17.1777 14.0918Z"
+          fill="black"
+        />
+      </svg>
+    </>
+  );
+};
+export const ClockIcon = () => {
+  return (
+    <>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="25"
+        height="25"
+        viewBox="0 0 25 25"
+        fill="none"
+      >
+        <g clip-path="url(#clip0_441_1668)">
+          <path
+            d="M12.5 0.390625C5.81055 0.390625 0.390625 5.81055 0.390625 12.5C0.390625 19.1895 5.81055 24.6094 12.5 24.6094C19.1895 24.6094 24.6094 19.1895 24.6094 12.5C24.6094 5.81055 19.1895 0.390625 12.5 0.390625ZM15.2881 17.4854L10.9814 14.3555C10.8301 14.2432 10.7422 14.0674 10.7422 13.8818V5.66406C10.7422 5.3418 11.0059 5.07812 11.3281 5.07812H13.6719C13.9941 5.07812 14.2578 5.3418 14.2578 5.66406V12.3877L17.3584 14.6436C17.6221 14.834 17.6758 15.2002 17.4854 15.4639L16.1084 17.3584C15.918 17.6172 15.5518 17.6758 15.2881 17.4854Z"
+            fill="black"
+          />
+        </g>
+        <defs>
+          <clipPath id="clip0_441_1668">
+            <rect width="25" height="25" fill="white" />
+          </clipPath>
+        </defs>
+      </svg>
+    </>
+  );
+};
+// yakshit icon end

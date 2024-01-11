@@ -1,14 +1,15 @@
 import Image from "next/image";
 import {
   EyeIcons,
+  Facebookicon,
   Fb,
   Insta,
+  Instagramicon,
   MessageIcons,
-  NumberIcons,
-  Searchicon,
-  TwIcons,
   Tweet,
+  Twittericon,
   Whatsapp,
+  Whatsappicon,
 } from "./Icon";
 
 //sonu data start
@@ -231,3 +232,103 @@ export const Data = [
   },
 ];
 // dinesh data end
+
+// yakshit data start
+export const staff = [
+  {
+    img: "/img/slider-img-1.png",
+    position: "Headmaster",
+    name: "Afuwape J. Abiodun ",
+    about:
+      "Consectur orem ipsum dor amet, adipiscing elit, sed do eiusmod tem.",
+    icons: [
+      {
+        fb: <Facebookicon />,
+        whatsap: <Whatsappicon />,
+        insta: <Instagramicon />,
+        twitter: <Twittericon />,
+      },
+    ],
+  },
+  {
+    img: "/img/slider-img-2.png",
+    position: "Headmistress",
+    name: "Afuwape J. Abiodun ",
+    about:
+      "Consectur orem ipsum dor amet, adipiscing elit, sed do eiusmod tem.",
+    icons: [
+      {
+        fb: <Facebookicon />,
+        whatsap: <Whatsappicon />,
+        insta: <Instagramicon />,
+        twitter: <Twittericon />,
+      },
+    ],
+  },
+  {
+    img: "/img/slider-img-3.png",
+    position: "Teacher",
+    name: "Afuwape J. Abiodun ",
+    about:
+      "Consectur orem ipsum dor amet, adipiscing elit, sed do eiusmod tem.",
+    icons: [
+      {
+        fb: <Facebookicon />,
+        whatsap: <Whatsappicon />,
+        insta: <Instagramicon />,
+        twitter: <Twittericon />,
+      },
+    ],
+  },
+];
+export const blog = [
+  {
+    img: "/img/latest-blog-1.png",
+    about: "Lorem ipsum dolor sit met, consectetur cing elit, sed do abbey...",
+    position: "Headmaster",
+    icons: [
+      {
+        icon: <MessageIcons />,
+        text: "10",
+      },
+      {
+        icon: <EyeIcons />,
+        text: "29",
+      },
+    ],
+    date: "September 10, 2021 ",
+  },
+  {
+    img: "/img/latest-bolg-2.png",
+    about: "Lorem ipsum dolor sit met, consectetur cing elit, sed do abbey...",
+    position: "Headmaster",
+    icons: [
+      {
+        icon: <MessageIcons />,
+        text: "10",
+      },
+      {
+        icon: <EyeIcons />,
+        text: "29",
+      },
+    ],
+    date: "September 10, 2021 ",
+  },
+  {
+    img: "/img/latest-blog-1.png",
+    about: "Lorem ipsum dolor sit met, consectetur cing elit, sed do abbey...",
+    position: "Headmaster",
+    icons: [
+      {
+        icon: <MessageIcons />,
+        text: "10",
+      },
+      {
+        icon: <EyeIcons />,
+        text: "29",
+      },
+    ],
+    date: "September 10, 2021 ",
+  },
+];
+// yakshit data end

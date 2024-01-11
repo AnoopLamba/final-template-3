@@ -3,3 +3,34 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* yakshit swiper 2*/
+.swiper-pagination-clickable .swiper-pagination-bullet {
+  content: "";
+  border: 1px solid #ff725e;
+  background: #fff;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  content: "";
+}
+
+.swiper-pagination-bullet-active::before {
+  content: "";
+  background: #ff725e;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 1.3px;
+  width: 16px;
+  height: 16px;
+}
+
+.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  top: 280px;
+}
+/* swiper 2 end */
