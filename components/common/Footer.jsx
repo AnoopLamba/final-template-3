@@ -11,11 +11,13 @@ import {
 import Link from "next/link";
 
 const Footer = () => {
+  const latestYear = new Date().getFullYear();
+
   return (
     <footer>
-      <div className="bg-[url('/img/footer-bg.png')] bg-no-repeat bg-center bg-cover py-[30px] sm:py-[50px] md:py-[75px] px-3">
+      <div className="bg-[url('/img/footer-bg.png')] bg-no-repeat bg-center bg-cover py-7 sm:py-12 md:py-[75px] px-3">
         {/* text */}
-        <div className="max-[706px] w-full mx-auto text-[#fff] text-center font-poppins text-2xl sm:text-[30px] font-medium leading-10">
+        <div className="max-[706px] w-full mx-auto text-[#fff] text-center font-poppins text-[14px] sm:text-[30px] font-medium leading-[24px] sm:leading-10">
           <p>
             A wonderful <span className="text-[#FF725E]">first</span> out of
             home learning
@@ -32,7 +34,7 @@ const Footer = () => {
             <input
               type="email"
               placeholder="Enter e-mail to recieve news letter"
-              className=" max-sm:pl-2 w-full bg-transparent text-white outline-none placeholder:text-[#fff] placeholder:font-poppins placeholder:text-[14px] sm:placeholder:text-[16px] md:placeholder:text-[20px] font-light md:font-normal leading-10"
+              className=" max-sm:pl-2 w-full bg-transparent text-white outline-none placeholder:text-[#fff] placeholder:font-poppins placeholder:text-[14px] pe-4 sm:placeholder:text-[16px] md:placeholder:text-[20px] font-light md:font-normal leading-10"
             />
 
             {/* btn */}
@@ -47,13 +49,15 @@ const Footer = () => {
         <div className="max-w-[1052px] w-full mx-auto flex justify-between flex-wrap gap-7">
           {/* logo */}
           <div className="pt-[19px] max-w-[221px] w-full">
-            <Image
-              className="max-sm:max-w-[90px] max-md:max-w-[130px]"
-              src="/img/Footer-Logo.PNg"
-              width={176}
-              height={78}
-              alt="logo"
-            />
+            <Link href="">
+              <Image
+                className="max-sm:max-w-[90px] max-md:max-w-[130px]"
+                src="/img/Footer-Logo.PNg"
+                width={176}
+                height={78}
+                alt="logo"
+              />
+            </Link>
 
             <p className="text-[#fff] font-poppins text-[20px] font-normal pt-[13px] leading-[34px]">
               Rapkhen is an outstanding Nursery & Primary school targeting
@@ -61,16 +65,16 @@ const Footer = () => {
             </p>
 
             <div className="flex justify-between pt-[22px]">
-              <Link href="">
+              <Link className="duration-200 hover:scale-110" href="">
                 <Facebookicon />
               </Link>
-              <Link href="">
+              <Link className="duration-200 hover:scale-110" href="">
                 <Whatsappicon />
               </Link>
-              <Link href="">
+              <Link className="duration-200 hover:scale-110" href="">
                 <Instagramicon />
               </Link>
-              <Link href="">
+              <Link className="duration-200 hover:scale-110" href="">
                 <Twittericon />
               </Link>
             </div>
@@ -87,40 +91,40 @@ const Footer = () => {
             <div className="flex flex-col gap-y-[28px] pt-5">
               <div>
                 <Link
-                  href=""
-                  className="text-[#fff] font-poppins text-[20px] font-normal leading-[21px]"
+                  href="/about"
+                  className="text-[#fff] hover:text-[#FF725E] font-poppins text-[20px] font-normal leading-[21px]"
                 >
                   About us
                 </Link>
               </div>
               <div>
                 <Link
-                  href=""
-                  className="text-[#fff] font-poppins text-[20px] font-normal leading-[21px]"
+                  href="/management"
+                  className="text-[#fff] hover:text-[#FF725E]  font-poppins text-[20px] font-normal leading-[21px]"
                 >
                   Management
                 </Link>
               </div>
               <div>
                 <Link
-                  href=""
-                  className="text-[#fff] font-poppins text-[20px] font-normal leading-[21px]"
+                  href="/news"
+                  className="text-[#fff] hover:text-[#FF725E]  font-poppins text-[20px] font-normal leading-[21px]"
                 >
                   News & Event
                 </Link>
               </div>
               <div>
                 <Link
-                  href=""
-                  className="text-[#fff] font-poppins text-[20px] font-normal leading-[21px]"
+                  href="/gallery"
+                  className="text-[#fff] hover:text-[#FF725E]  font-poppins text-[20px] font-normal leading-[21px]"
                 >
                   Gallery
                 </Link>
               </div>
               <div>
                 <Link
-                  href=""
-                  className="text-[#fff] font-poppins text-[20px] font-normal leading-[21px]"
+                  href="/contact"
+                  className="text-[#fff] hover:text-[#FF725E]  font-poppins text-[20px] font-normal leading-[21px]"
                 >
                   Contact us
                 </Link>
@@ -142,26 +146,33 @@ const Footer = () => {
               </p>
             </div>
 
-            <div className="flex items-center gap-2 pt-5">
-              <Emailicon />
-              <p className="text-[#fff] text-[20px] font-poppins font-normal leading-[32px]">
-                Info@gmail.com
-              </p>
-            </div>
+            <Link href="">
+              <div className="flex items-center group  gap-2 pt-5">
+                <Emailicon />
+                <p className="text-[#fff] group-hover:text-[#FF725E]  text-[20px] font-poppins font-normal leading-[32px]">
+                  Info@gmail.com
+                </p>
+              </div>
+            </Link>
 
             <div className="flex gap-2 pt-5">
               {/* call */}
-              <div className="pt-2">
+              <div className="pt-2"></div>
+              <Link href="" className="pt-2">
                 <Callicon />
-              </div>
+              </Link>
 
               <div>
-                <p className="text-[#FFF] font-poppins text-[20px] font-normal leading-[33px]">
-                  +234 805 029 1265
-                </p>
-                <p className="text-[#FFF] font-poppins text-[20px] font-normal leading-[33px]">
-                  +234 907 228 0656
-                </p>
+                <Link href="">
+                  <p className="text-[#FFF] hover:text-[#FF725E]  font-poppins text-[20px] font-normal leading-[33px]">
+                    +234 805 029 1265
+                  </p>
+                </Link>
+                <Link href="">
+                  <p className="text-[#FFF] hover:text-[#FF725E]  font-poppins text-[20px] font-normal leading-[33px]">
+                    +234 907 228 0656
+                  </p>
+                </Link>
               </div>
             </div>
           </div>
@@ -181,17 +192,17 @@ const Footer = () => {
               <input
                 type="text"
                 placeholder="Lorem ipsum"
-                className="placeholder:text-[rgba(0,0,0,0.50)] placeholder:font-poppins placeholder:text-[12px] placeholder:font-normal leading-10 rounded-[5px] bordere-[2px] border-[#fff] bg-[#EDEDED] w-full h-[40px] pl-[10px] outline-none"
+                className="placeholder:text-[rgba(0,0,0,0.50)] pe-4 placeholder:font-poppins placeholder:text-[12px] placeholder:font-normal leading-10 rounded-[5px] bordere-[2px] border-[#fff] bg-[#EDEDED] w-full h-[40px] pl-[10px] outline-none"
               />
               <input
                 type="text"
                 placeholder="Lorem ipsum"
-                className="placeholder:text-[rgba(0,0,0,0.50)] placeholder:font-poppins placeholder:text-[12px] placeholder:font-normal leading-10 rounded-[5px] bordere-[2px] border-[#fff] bg-[#EDEDED] w-full h-[40px] pl-[10px] outline-none"
+                className="placeholder:text-[rgba(0,0,0,0.50)] pe-4 placeholder:font-poppins placeholder:text-[12px] placeholder:font-normal leading-[40px] rounded-[5px] bordere-[2px] border-[#fff] bg-[#EDEDED] w-full h-[40px] pl-[10px] outline-none"
               />
               <textarea
                 type="text"
                 placeholder="Lorem ipsum dolor...."
-                className="placeholder:text-[rgba(0,0,0,0.50)] placeholder:font-poppins placeholder:text-[12px] placeholder:font-normal leading-10 rounded-[5px] bordere-[2px] border-[#fff] bg-[#EDEDED] w-full h-[70px] pl-[10px] outline-none resize-none"
+                className="placeholder:text-[rgba(0,0,0,0.50)] pe-2 placeholder:font-poppins placeholder:text-[12px] placeholder:font-normal leading-[25px] pt-2 rounded-[5px] bordere-[2px] border-[#fff] bg-[#EDEDED] w-full h-[70px] pl-[10px] outline-none resize-none"
               />
             </div>
 
@@ -206,8 +217,8 @@ const Footer = () => {
         {/* copyright */}
 
         <div className="pt-[50px] flex justify-center">
-          <p className="text-[#FFF] text-center font-poppins text-[18px] font-medium leading-[21px] tracking-[-0.36px]">
-            Copyright © 2021. All Right Reserved.
+          <p className="text-[#FFF] text-center font-poppins text-[15px] sm:text-[18px] font-medium leading-[21px] tracking-[-0.36px]">
+            Copyright © {latestYear}. All Right Reserved.
           </p>
         </div>
       </div>

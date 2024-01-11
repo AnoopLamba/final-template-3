@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Cards } from "./common/Helper";
 import Link from "next/link";
 import HeaderBanner from "./common/HeaderBanner";
+import { EyeIcons, MessageIcons } from "./common/Icon";
 
 const NewsAndEventPage = () => {
   return (
@@ -10,7 +11,7 @@ const NewsAndEventPage = () => {
       <HeaderBanner heading="News & Event" />
 
       <div className="max-w-[1152px] w-full mx-auto  sm:px-[30px] p-4 sm:py-[50px] ">
-        <p className="flex justify-center text-[30px] font-semibold mt-[50px] font-poppins text-[#22343D] ">
+        <p className="flex justify-center text-[30px] font-semibold  font-poppins text-[#22343D] ">
           News & <span className=" text-[#FF725E]"> Event</span>
         </p>
         <div className="flex justify-center">
@@ -43,26 +44,26 @@ const NewsAndEventPage = () => {
                   href=""
                   className="max-w-[60px] w-full flex justify-between items-center "
                 >
-                  <span>{items.messag}</span>
-                  <span>10</span>
+                  <MessageIcons />
+                  <p>{items.ten}</p>
                 </Link>
                 <Link
                   href=""
                   className="max-w-[60px] w-full flex justify-between items-center "
                 >
-                  <span>{items.eye}</span>
-                  <span>29</span>
+                  <EyeIcons />
+                  <p>{items.twintynine}</p>
                 </Link>
               </div>
 
               <p className="max-w-[284px] w-full max-sm:px-1 mx-auto font-poppins text-[19px] font-normal  leading-[32px] mt-5 ">
-                September 10, 2021
+                {items.date}
               </p>
             </div>
           ))}
-          <div className="w-full  ">
-            <button className=" max-w-[195px] w-full hover:scale-105  sm:px-5 sm:py-7 px-2 py-4 float-right flex bg-[#FF725E] items-center rounded-[5px] mt-[50px] justify-between">
-              <p className="max-w-[99px] w-full font-poppins text-[20px] font-normal leading-[21px] tracking-[-0.4px] text-white ">
+          <div className="w-full     ">
+            <button className="max-w-[195px] border-[2px] border-[#FF725E] group  w-full hover:bg-transparent  sm:px-5 sm:py-7 px-2 py-4 float-right flex bg-[#FF725E] items-center rounded-[5px] mt-[50px] justify-between">
+              <p className="max-w-[99px] group-hover:text-[#FF725E] w-full font-poppins text-[20px] font-normal leading-[21px] tracking-[-0.4px] text-white ">
                 Next page
               </p>
               <span>
@@ -74,6 +75,7 @@ const NewsAndEventPage = () => {
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
+                    className="group-hover:stroke-[#FF725E]"
                     d="M1 3.7658L17 3.76268M17 3.76268L13.5 0.999756M17 3.76268L13.5 6.00024"
                     stroke="white"
                     stroke-linecap="round"
