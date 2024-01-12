@@ -7,12 +7,13 @@ import "swiper/css/pagination";
 
 import { Pagination } from "swiper/modules";
 import Link from "next/link";
+import HeroSection from "./Herosection";
 
 const HomePage = () => {
   return (
     <>
       {/* Herosection */}
-
+      <HeroSection />
       {/* Our activities */}
       <div className="max-w-[1092px] w-full mx-auto bg-[#FFF] pt-[51px] pb-[40px] px-3 lg:px-[2px]">
         <div className="max-w-[209px] w-full mx-auto">
@@ -153,26 +154,21 @@ const HomePage = () => {
         </div>
         <div className="max-w-[1052px] w-full mx-auto px-3">
           <Swiper
-            slidesPerView={3}
+            slidesPerView={1}
             spaceBetween={10}
-            centeredSlides={true}
             loop={true}
             pagination={{
               marginTop: 50,
               clickable: true,
             }}
             breakpoints={{
-              425: {
+              320: {
                 slidesPerView: 1,
-                spaceBetween: 30,
+                spaceBetween: 5,
               },
               576: {
-                slidesPerView: 1.2,
-                spaceBetween: 20,
-              },
-              768: {
                 slidesPerView: 2,
-                spaceBetween: 76,
+                spaceBetween: 50,
               },
               1024: {
                 slidesPerView: 3,
@@ -180,7 +176,7 @@ const HomePage = () => {
               },
             }}
             modules={[Pagination]}
-            className="mySwiper h-[550px] px-3 pt-[19px] max-w-[1050px] w-full mx-auto flex items-center justify-center"
+            className="mySwiper2 h-[550px] px-3 pt-[19px] max-w-[300px] min-[576px]:max-w-[675px] lg:max-w-[1050px] w-full mx-auto flex items-center justify-center"
           >
             {staff.map((item, index) => (
               <SwiperSlide
@@ -198,13 +194,13 @@ const HomePage = () => {
                   <p className="text-[#FF725E] font-Poppins text-[10px] md:text-[16px] font-normal leading-[20px] md:leading-[26px]">
                     {item.position}
                   </p>
-                  <p className="text-[#22343D] font-Poppins text-[12px] md:text-[16px] lg:text-[22px] font-semibold leading-[15px] md:leading-[24px] lg:leading-[30px]">
+                  <p className="text-[#22343D] font-Poppins text-[22px] font-semibold leading-[30px]">
                     {item.name}
                   </p>
-                  <p className="text-[#22343D] font-Poppins text-[10px] md:text-[16px] font-normal leading-[14px] md:leading-[26px]">
+                  <p className="text-[#22343D] font-Poppins text-[16px] font-normal leading-[26px]">
                     {item.about}
                   </p>
-                  <div className="flex flex-wrap md:flex-nowrap justify-start items-center gap-y-1 gap-x-3 md:gap-[25px] mt-[10px]">
+                  <div className="flex flex-wrap md:flex-nowrap justify-start items-center gap-y-1 gap-x-2 md:gap-[25px] mt-[10px]">
                     {item.icons.map((icn, icnIndex) => (
                       <Link
                         href={icn.link}

@@ -4,8 +4,51 @@
 @tailwind components;
 @tailwind utilities;
 
-/* yakshit swiper 2*/
-.swiper-pagination-clickable .swiper-pagination-bullet {
+/* swiper 1 */
+.mySwiper1 .swiper-pagination-clickable .swiper-pagination-bullet {
+  content: "";
+  background: transparent url(/img/inactive-circle.png);
+  display: inline-block;
+  opacity: 100%;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
+
+
+.mySwiper1 .swiper-horizontal>.swiper-pagination-bullets,
+.mySwiper1 .swiper-pagination-bullets.swiper-pagination-horizontal {
+  content: "";
+}
+
+.mySwiper1 .swiper-pagination-bullet-active::before {
+  content: "";
+  background: transparent url(/img/active-circle.png);
+  background-size: contain;
+  display: inline-block;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
+
+@media (max-width:640px) {
+  .mySwiper1.swiper-pagination-bullet-active::before {
+    display: none !important;
+  }
+
+  .mySwiper1 .swiper-pagination-clickable .swiper-pagination-bullet {
+    display: none !important;
+  }
+}
+
+
+.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  top: 280px;
+}
+
+/* yakshit swiper 2 */
+.mySwiper2 .swiper-pagination-clickable .swiper-pagination-bullet {
   content: "";
   background: url(/img/inactive-sidebar-pagination.png);
   background-size: contain;
@@ -16,12 +59,12 @@
   height: 20px;
 }
 
-.swiper-horizontal>.swiper-pagination-bullets,
-.swiper-pagination-bullets.swiper-pagination-horizontal {
+.mySwiper2 .swiper-horizontal>.swiper-pagination-bullets,
+.mySwiper2 .swiper-pagination-bullets.swiper-pagination-horizontal {
   content: "";
 }
 
-.swiper-pagination-bullet-active::before {
+.mySwiper2 .swiper-pagination-bullet-active::before {
   content: "";
   background: transparent url(/img/active-sidebar-pagination.png);
   background-size: contain;
@@ -31,9 +74,9 @@
   height: 20px;
 }
 
-.swiper-pagination-bullets,
-.swiper-pagination-bullets.swiper-pagination-horizontal {
+.mySwiper2 .swiper-pagination-bullets,
+.mySwiper2 .swiper-pagination-bullets.swiper-pagination-horizontal {
   top: 530px !important
 }
 
-/* swiper 2 end */
+/* swiper 2 end*/

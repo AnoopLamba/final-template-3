@@ -320,6 +320,87 @@ export const staff = [
       },
     ],
   },
+  {
+    img: "/img/slider-img-1.png",
+    position: "Headmaster",
+    name: "Afuwape J. Abiodun ",
+    about:
+      "Consectur orem ipsum dor amet, adipiscing elit, sed do eiusmod tem.",
+    icons: [
+      {
+        icon: <FacebookIcon1 />,
+        link: "",
+      },
+      {
+        icon: <WhatsappIcon />,
+
+        link: "",
+      },
+      {
+        icon: <InstagramIcon />,
+
+        link: "",
+      },
+      {
+        icon: <TwitterIcon />,
+        link: "",
+      },
+    ],
+  },
+  {
+    img: "/img/slider-img-2.png",
+    position: "Headmistress",
+    name: "Afuwape J. Abiodun ",
+    about:
+      "Consectur orem ipsum dor amet, adipiscing elit, sed do eiusmod tem.",
+    icons: [
+      {
+        icon: <FacebookIcon1 />,
+        link: "",
+      },
+      {
+        icon: <WhatsappIcon />,
+
+        link: "",
+      },
+      {
+        icon: <InstagramIcon />,
+
+        link: "",
+      },
+      {
+        icon: <TwitterIcon />,
+        link: "",
+      },
+    ],
+  },
+  {
+    img: "/img/slider-img-3.png",
+    position: "Teacher",
+    name: "Afuwape J. Abiodun ",
+    about:
+      "Consectur orem ipsum dor amet, adipiscing elit, sed do eiusmod tem.",
+    icons: [
+      {
+        icon: <FacebookIcon1 />,
+        link: "",
+      },
+      {
+        icon: <WhatsappIcon />,
+
+        link: "",
+      },
+      {
+        icon: <InstagramIcon />,
+
+        link: "",
+      },
+      {
+        icon: <TwitterIcon />,
+        link: "",
+      },
+    ],
+  },
 ];
 export const blog = [
   {
