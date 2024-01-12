@@ -7,30 +7,33 @@
 /* yakshit swiper 2*/
 .swiper-pagination-clickable .swiper-pagination-bullet {
   content: "";
-  border: 1px solid #ff725e;
-  background: #fff;
+  background: url(/img/inactive-sidebar-pagination.png);
+  background-size: contain;
   display: inline-block;
+  opacity: 100%;
+  border-radius: 50%;
   width: 20px;
   height: 20px;
 }
 
-.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-horizontal>.swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal {
   content: "";
 }
 
 .swiper-pagination-bullet-active::before {
   content: "";
-  background: #ff725e;
-  border-radius: 50%;
+  background: transparent url(/img/active-sidebar-pagination.png);
+  background-size: contain;
   display: inline-block;
-  margin: 1.3px;
-  width: 16px;
-  height: 16px;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
 }
 
 .swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal {
-  top: 280px;
+  top: 530px !important
 }
+
 /* swiper 2 end */

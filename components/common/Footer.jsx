@@ -3,7 +3,7 @@ import {
   Btnicon,
   Callicon,
   Emailicon,
-  Facebookicon,
+  FacebookIcon,
   Instagramicon,
   Twittericon,
   Whatsappicon,
@@ -66,7 +66,7 @@ const Footer = () => {
 
             <div className="flex justify-between pt-[22px]">
               <Link className="duration-200 hover:scale-110" href="">
-                <Facebookicon />
+                <FacebookIcon />
               </Link>
               <Link className="duration-200 hover:scale-110" href="">
                 <Whatsappicon />

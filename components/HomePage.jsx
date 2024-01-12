@@ -6,10 +6,13 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 import { Pagination } from "swiper/modules";
+import Link from "next/link";
 
 const HomePage = () => {
   return (
     <>
+      {/* Herosection */}
+
       {/* Our activities */}
       <div className="max-w-[1092px] w-full mx-auto bg-[#FFF] pt-[51px] pb-[40px] px-3 lg:px-[2px]">
         <div className="max-w-[209px] w-full mx-auto">
@@ -141,80 +144,82 @@ const HomePage = () => {
       </div>
 
       {/* Our team slider */}
-      <div className="bg-[#F2F2F2] pt-[30px] pb-[110px]">
+      <div className="bg-[#F2F2F2] pt-[30px] pb-[40px]">
         <h2 className="text-[#22343D] text-center font-poppins text-[30px] font-bold leading-[38px] uppercase">
           Meet Our <span className="text-[#FF725E]">Team</span>
         </h2>
         <div className="mx-auto w-fit mb-[20px]">
           <LineIcons />
         </div>
-        <Swiper
-          slidesPerView={3}
-          spaceBetween={10}
-          centeredSlides={true}
-          loop={true}
-          pagination={{
-            marginTop: 50,
-            clickable: true,
-          }}
-          breakpoints={{
-            425: {
-              slidesPerView: 1,
-              spaceBetween: 5,
-            },
-            576: {
-              slidesPerView: 1.6,
-              spaceBetween: 20,
-            },
-            768: {
-              slidesPerView: 2,
-              spaceBetween: 76,
-            },
-            1024: {
-              slidesPerView: 3,
-              spaceBetween: 76,
-            },
-          }}
-          modules={[Pagination]}
-          className="mySwiper px-3 pt-[19px] max-w-[1050px] w-full mx-auto flex items-center justify-center"
-        >
-          {staff.map((item, index) => (
-            <SwiperSlide
-              key={index}
-              className="max-w-[300px] w-full h-[497px] rounded-[10px] bg-white shadow-[0px_0px_20px_2px_rgba(0,0,0,0.20)]"
-            >
-              <Image
-                src={item.img}
-                width={300}
-                height={281}
-                className="md:max-w-[300px] md:w-full md:h-[281px] rounded-t-[10px]"
-                alt="img"
-              />
-              <div className="px-1 md:px-5 pt-[10px] pb-[15px]">
-                <p className="text-[#FF725E] font-Poppins text-[10px] md:text-[16px] font-normal leading-[20px] md:leading-[26px]">
-                  {item.position}
-                </p>
-                <p className="text-[#22343D] font-Poppins text-[12px] md:text-[16px] lg:text-[22px] font-semibold leading-[15px] md:leading-[24px] lg:leading-[30px]">
-                  {item.name}
-                </p>
-                <p className="text-[#22343D] font-Poppins text-[10px] md:text-[16px] font-normal leading-[14px] md:leading-[26px]">
-                  {item.about}
-                </p>
-                {item.icons.map((icn, icnIndex) => (
-                  <div
-                    key={icnIndex}
-                    className="flex flex-wrap md:flex-nowrap justify-center gap-y-1 gap-x-3 md:gap-[25px] mt-[10px]"
-                  >
-                    <div>{icn.fb}</div>
-                    <div>{icn.whatsap}</div>
-                    <div>{icn.insta}</div>
-                    <div>{icn.twitter}</div>
+        <div className="max-w-[1052px] w-full mx-auto px-3">
+          <Swiper
+            slidesPerView={3}
+            spaceBetween={10}
+            centeredSlides={true}
+            loop={true}
+            pagination={{
+              marginTop: 50,
+              clickable: true,
+            }}
+            breakpoints={{
+              425: {
+                slidesPerView: 1,
+                spaceBetween: 30,
+              },
+              576: {
+                slidesPerView: 1.2,
+                spaceBetween: 20,
+              },
+              768: {
+                slidesPerView: 2,
+                spaceBetween: 76,
+              },
+              1024: {
+                slidesPerView: 3,
+                spaceBetween: 76,
+              },
+            }}
+            modules={[Pagination]}
+            className="mySwiper h-[550px] px-3 pt-[19px] max-w-[1050px] w-full mx-auto flex items-center justify-center"
+          >
+            {staff.map((item, index) => (
+              <SwiperSlide
+                key={index}
+                className="max-w-[300px] w-full !h-fit rounded-[10px] bg-white shadow-[0px_0px_20px_2px_rgba(0,0,0,0.20)]"
+              >
+                <Image
+                  src={item.img}
+                  width={300}
+                  height={281}
+                  className="md:max-w-[300px] md:w-full md:h-[281px] rounded-t-[10px]"
+                  alt="img"
+                />
+                <div className="px-1 md:px-5 pt-[10px] pb-[15px]">
+                  <p className="text-[#FF725E] font-Poppins text-[10px] md:text-[16px] font-normal leading-[20px] md:leading-[26px]">
+                    {item.position}
+                  </p>
+                  <p className="text-[#22343D] font-Poppins text-[12px] md:text-[16px] lg:text-[22px] font-semibold leading-[15px] md:leading-[24px] lg:leading-[30px]">
+                    {item.name}
+                  </p>
+                  <p className="text-[#22343D] font-Poppins text-[10px] md:text-[16px] font-normal leading-[14px] md:leading-[26px]">
+                    {item.about}
+                  </p>
+                  <div className="flex flex-wrap md:flex-nowrap justify-start items-center gap-y-1 gap-x-3 md:gap-[25px] mt-[10px]">
+                    {item.icons.map((icn, icnIndex) => (
+                      <Link
+                        href={icn.link}
+                        key={icnIndex}
+                        className="w-fit h-fit"
+                      >
+                        {icn.icon}
+                      </Link>
+                    ))}
                   </div>
-                ))}
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
       </div>
 
       {/* Our gallery */}

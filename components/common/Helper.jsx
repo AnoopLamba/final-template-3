@@ -1,14 +1,18 @@
 import Image from "next/image";
 import {
   EyeIcons,
-  Facebookicon,
+  FacebookIcon,
+  FacebookIcon1,
   Fb,
   Insta,
+  InstagramIcon,
   Instagramicon,
   MessageIcons,
   Tweet,
+  TwitterIcon,
   Twittericon,
   Whatsapp,
+  WhatsappIcon,
   Whatsappicon,
 } from "./Icon";
 
@@ -243,10 +247,22 @@ export const staff = [
       "Consectur orem ipsum dor amet, adipiscing elit, sed do eiusmod tem.",
     icons: [
       {
-        fb: <Facebookicon />,
-        whatsap: <Whatsappicon />,
-        insta: <Instagramicon />,
-        twitter: <Twittericon />,
+        icon: <FacebookIcon1 />,
+        link: "",
+      },
+      {
+        icon: <WhatsappIcon />,
+
+        link: "",
+      },
+      {
+        icon: <InstagramIcon />,
+
+        link: "",
+      },
+      {
+        icon: <TwitterIcon />,
+        link: "",
       },
     ],
   },
@@ -258,10 +274,22 @@ export const staff = [
       "Consectur orem ipsum dor amet, adipiscing elit, sed do eiusmod tem.",
     icons: [
       {
-        fb: <Facebookicon />,
-        whatsap: <Whatsappicon />,
-        insta: <Instagramicon />,
-        twitter: <Twittericon />,
+        icon: <FacebookIcon1 />,
+        link: "",
+      },
+      {
+        icon: <WhatsappIcon />,
+
+        link: "",
+      },
+      {
+        icon: <InstagramIcon />,
+
+        link: "",
+      },
+      {
+        icon: <TwitterIcon />,
+        link: "",
       },
     ],
   },
@@ -273,10 +301,22 @@ export const staff = [
       "Consectur orem ipsum dor amet, adipiscing elit, sed do eiusmod tem.",
     icons: [
       {
-        fb: <Facebookicon />,
-        whatsap: <Whatsappicon />,
-        insta: <Instagramicon />,
-        twitter: <Twittericon />,
+        icon: <FacebookIcon1 />,
+        link: "",
+      },
+      {
+        icon: <WhatsappIcon />,
+
+        link: "",
+      },
+      {
+        icon: <InstagramIcon />,
+
+        link: "",
+      },
+      {
+        icon: <TwitterIcon />,
+        link: "",
       },
     ],
   },
