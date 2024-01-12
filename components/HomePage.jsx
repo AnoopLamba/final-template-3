@@ -190,7 +190,7 @@ const HomePage = () => {
                   className="md:max-w-[300px] md:w-full md:h-[281px] rounded-t-[10px]"
                   alt="img"
                 />
-                <div className="px-1 md:px-5 pt-[10px] pb-[15px]">
+                <div className="px-5 pt-[10px] pb-[15px]">
                   <p className="text-[#FF725E] font-Poppins text-[10px] md:text-[16px] font-normal leading-[20px] md:leading-[26px]">
                     {item.position}
                   </p>
